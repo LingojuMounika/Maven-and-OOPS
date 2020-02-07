@@ -1,0 +1,86 @@
+package
+maven_mouni.sweets;
+public class gulabjamun extends Sweets {
+
+	public gulabjamun(String name,int price,int weight) {
+		super(name,price,weight);
+	}
+}
+
+
+package
+maven_mouni.sweets;
+public class kajukatli extends Sweets {
+
+	public kajukatli(String name,int price,int weight) {
+		super(name,price,weight);
+	}
+}
+
+
+package
+maven_mouni.sweets;
+public class kalajamun extends Sweets {
+
+	public kalajamun(String name,int price,int weight) {
+		super(name,price,weight)
+	}
+}
+
+
+package
+maven_mouni sweets
+public class kheer extends Sweets {
+
+	public kheer(String name,int price,int weight) {
+		super(name,price,weight)
+	}
+}
+
+
+
+
+package maven_mouni sweets;
+
+import 
+Maven_mouni.sweets.Sweets;
+public class Sweets implements comparable<Sweets>{
+
+public string name;
+private int price;
+private weight price;
+ 
+public Sweets(String name,int price,int weight) {
+   this.name=name;
+   this.price=price;
+   this.weight=weight;
+}
+
+public String getName(){
+	return name;
+}
+
+public String getPrice(){
+	return price;
+}
+
+@override
+public int compareTo(Sweets o) {
+	if(o.price>price)
+		return 1;
+	if(o.price<price)
+		return -1;
+	else
+		return 0;	
+}
+
+@override
+public String toString() {
+	return "Sweets{"+"name="+name'\"+"
+			+, "price="+price+
+			",weight="+weight+
+'}';
+}
+}
+
+

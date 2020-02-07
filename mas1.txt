@@ -1,0 +1,61 @@
+package maven_project.mouni_maven.choclates;
+
+public class barone extends chocolates{
+
+	public static void main(String name,int price,int weight) {
+	
+		super(name,price,weight);
+		
+	}
+
+}
+package maven_project.mouni_maven.choclates;
+
+public class cadbury extends chocolates{
+
+	public static void main(String name,int price,int weight) {
+		
+		super(name,price,weight);
+		
+	}
+}
+package maven_project.mouni_maven.choclates;
+
+public class chocolates implements comparable<chocolates>{
+
+public string name;
+private int price;
+private weight price;
+ 
+public chocolates(String name,int price,int weight) {
+   this.name=name;
+   this.price=price;
+   this.weight=weight;
+}
+
+public String getName(){
+	return name;
+}
+
+public String getPrice(){
+	return price;
+}
+
+@override
+public int compareTo(chocolates o) {
+	if(o.price>price)
+		return 1;
+	if(o.price<price)
+		return -1;
+	else
+		return 0;	
+}
+
+@override
+public String toString() {
+	return "chocolates{"+"name="+name'\"+"
+			+, "price="+price+
+			",weight="+weight+
+'}';
+}
+}
